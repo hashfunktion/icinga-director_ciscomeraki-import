@@ -3,7 +3,11 @@
 This will call the Meraki Dashboard API and query all networks from the organisation for Meraki devices.
 Query results are writen into a json file for each network so the Icinga Director can import them.
 
+Returns the script any error, the script can send an email to the icinga admin with the error code.
+
 > fileshipper module required
+
+The python script must be trigged with a cron job.
 
 ### SQL Script to add ImportSource and Sync Rule
 The SQL file will show how to add import sources and sync rules for the icinga director to import the devices from the json file.
