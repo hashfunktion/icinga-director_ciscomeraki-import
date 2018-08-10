@@ -30,11 +30,13 @@ Returns the script any error, the script can send an email to the icinga admin w
 
 
 
-The python script must be trigged with a cron job.
+The python script can be trigged with a cron job.
 
 
 ## SQL Script to add ImportSource and Sync Rule
-The SQL file will show how to add import sources and sync rules for the icinga director to import the devices from the json file.
+The SQL file will show how to add import sources and sync rules for the icinga director to import the devices from the json file with sql so when you have a lot of networks in the Meraki environment you don´t have to create this in the gui.
+
+# WARNING - THE SQL FILE IS WITHOUT WARRANTY - BE CARFUL WHEN YOU EDIT DATABASES
 
 This is the host object that the import/sync rules from the sql file will create:
 
